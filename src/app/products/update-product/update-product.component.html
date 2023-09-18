@@ -1,0 +1,74 @@
+
+<!-- product Details input form -->
+<div class="col-md-12"  *ngIf="updateProductForm">
+    <div class="shadow bg-white p-3">
+        <h4 class="text-primary">
+            PRODUCT INFORMATION
+        </h4>
+        <hr>
+        <form action="" method="POST"  #productInfo="ngForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="text-danger">Product Name</label>
+                    <input type="text" name="productName" class="form-control" placeholder="Enter Product Name" required   [(ngModel)]="oldData.productName"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="text-danger">Product Category</label>
+                    <input type="text" name="productCategory" class="form-control" placeholder="Enter Product Category" required [(ngModel)]="oldData.productCategory"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="text-danger">Product URL</label>
+                    <input type="url" name="productLink" class="form-control" placeholder="Enter Product Url" required  [(ngModel)]="oldData.productLink"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Price</label>
+                    <input type="number" name="productPrice" class="form-control" placeholder="Enter Product Price" required  [(ngModel)]="oldData.productPrice"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Rating</label>
+                    <input type="number" name="productRating" class="form-control" placeholder="Enter Product Rating" required  [(ngModel)]="oldData.productRating"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Reviews</label>
+                    <input type="number" name="productReviews" class="form-control" placeholder="Enter Product Reviews" required  [(ngModel)]="oldData.reviews"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Vendor Name</label>
+                    <input type="text" name="vendorName" class="form-control" placeholder="Enter Product Vendor Name" required  [(ngModel)]="oldData.vendorName"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Warranty</label>
+                    <input type="text" name="productWarranty" class="form-control" placeholder="Enter Product Warranty" required  [(ngModel)]="oldData.warranty"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">In Stock</label>
+                    <input type="text" name="inStock" class="form-control" placeholder="Enter Product Stock Number" required  [(ngModel)]="oldData.inStock"/>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="text-danger">Product Id</label>
+                    <input type="number" name="productId" class="form-control" placeholder="Enter Product Id" required  [(ngModel)]="oldData.id"/>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="text-danger">Product Description</label>
+                    <textarea name="productDescription" class="form-control" rows="2" required  [(ngModel)]="oldData.productDescription"></textarea>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center" ><a class="btn btn-outline-dark mt-auto" (click)="updateProduct(productInfo)" (click)="updateBtnClicked()">Update Product</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Message After Update -->
+<div *ngIf="msg" >
+    <div class="shadow bg-white p-3">
+        <h4 class="text-success text-center">
+            Your Product is Updated SuccessFully 🙂
+        </h4>
+    </div>
+</div>
+
+
+    
+    

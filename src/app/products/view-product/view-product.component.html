@@ -1,0 +1,94 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-4"><img class="card-img-top mb-5 mb-md-0" src="{{viewProduct.productLink}}" alt="..." /></div>
+            <div class="col-md-8">
+                <!-- <div>
+                    <h5 [ngStyle]="{color:'purple'}">Category: {{viewProduct.productCategory}}</h5>
+                </div> -->
+                <h1 class="display-9 fw-bolder"  [ngStyle]="{color:'crimson'}">{{viewProduct.productName}}</h1><br>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through">$700.00</span> => 
+                    <span>${{viewProduct.productPrice}}.00</span>
+                </div>
+                <h5 [ngStyle]="{color:'purple'}">Description:</h5>
+                <p class="lead">{{viewProduct.productDescription}}</p>
+                <div class="d-flex">
+                    <div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" [routerLink]="['/products/updateProduct',viewProduct.id]">Update Product</a></div>
+                    </div>
+                </div><br>
+
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="heading" [ngStyle]="{color:'purple'}">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>4.1 average based on 254 reviews.</p>
+                <hr style="border:3px solid #f1f1f1">
+
+                <div class="row">
+                <div class="side">
+                    <div>5 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                    <div class="bar-5"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>150</div>
+                </div>
+                <div class="side">
+                    <div>4 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                 <div class="bar-4"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>63</div>
+                </div>
+                <div class="side">
+                    <div>3 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                    <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>15</div>
+                </div>
+                <div class="side">
+                    <div>2 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                    <div class="bar-2"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>6</div>
+                </div>
+                <div class="side">
+                    <div>1 star</div>
+                </div>
+                <div class="middle">
+                    <div class="bar-container">
+                    <div class="bar-1"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                    <div>20</div>
+                </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>

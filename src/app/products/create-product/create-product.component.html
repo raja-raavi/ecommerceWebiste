@@ -1,0 +1,120 @@
+<div class="py-3 py-md-4 checkout">
+    <div class="container">
+        <h4 >Welcome to Ecommerce Online Store 🥳</h4>
+        <hr>
+
+        <div class="row">
+            <!-- product Details input form -->
+            <div class="col-md-12" *ngIf="productDetails">
+                <div class="shadow bg-white p-3">
+                    <h4 class="text-primary">
+                       ENTER PRODUCT INFORMATION
+                    </h4>
+                    <hr>
+
+                    <form action="" method="POST"  #productInfo="ngForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="text-danger">Product Name</label>
+                                <input type="text" name="productName" class="form-control" placeholder="Enter Product Name" required ngModel/>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="text-danger">Product Category</label>
+                                <input type="text" name="productCategory" class="form-control" placeholder="Enter Product Category" required ngModel/>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="text-danger">Product URL</label>
+                                <input type="email" name="productLink" class="form-control" placeholder="Enter Product Url" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">Product Price</label>
+                                <input type="number" name="productPrice" class="form-control" placeholder="Enter Product Price" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">Product Rating</label>
+                                <input type="number" name="productRating" class="form-control" placeholder="Enter Product Rating" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">Product Reviews</label>
+                                <input type="number" name="productReviews" class="form-control" placeholder="Enter Product Reviews" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">Product Vendor Name</label>
+                                <input type="text" name="vendorName" class="form-control" placeholder="Enter Product Vendor Name" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">Product Warranty</label>
+                                <input type="text" name="productWarranty" class="form-control" placeholder="Enter Product Warranty" required ngModel/>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="text-danger">In Stock</label>
+                                <input type="number" name="inStock" class="form-control" placeholder="Enter Product Stock Number" required ngModel/>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="text-danger">Product Description</label>
+                                <textarea name="productDescription" class="form-control" rows="2" required ngModel></textarea>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center" ><a class="btn btn-outline-dark mt-auto" (click)="addNewProduct(productInfo)" ngModel (click)="submit()">Create Product</a></div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- submitted Deatils -->
+            <div class="col-md-12 mb-4" *ngIf="submittedDetails">
+                <div class="shadow bg-white p-3">
+                    <h4 class="text-success text-center">
+                        Your Product is Created SuccessFully 🙂
+                    </h4>
+                </div>
+                <section style="background-color: #eee;">
+                    <div class="container py-5">
+                      <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6 col-xl-4">
+                          <div class="card text-black">
+                            <i class="fab fa-apple fa-lg pt-3 pb-1 px-3"></i>
+                            <img src="{{details.productLink}}"
+                              class="card-img-top" alt="Apple Computer" />
+                            <div class="card-body">
+                              <div class="text-center">
+                                <h5 class="card-title">{{details.productName}}</h5>
+                                <p class="text-muted mb-4">{{details.productCategory}}</p>
+                              </div>
+                              <div>
+                                <div class="d-flex justify-content-between">
+                                  <span>Product Price</span><span>${{details.productPrice}}</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <span>Product Warranty</span><span>${{details.warranty}}</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <span>Stock</span><span>{{details.inStock}}</span>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between total font-weight-bold mt-4">
+                                <span>Description:</span>
+                                <span>{{details.productDescription}}</span>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="mt-3">
+                                <span class="d-flex justify-content-between"> 
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" (click)="viewProduct()">View Product</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" (click)="goToHome()">Go To Home</a></div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
