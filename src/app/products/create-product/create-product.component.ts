@@ -29,7 +29,7 @@ export class CreateProductComponent{
   }
 
   viewProduct(){
-    this.router.navigate(['/products/viewProduct/13'])
+    this.router.navigate(['/products/viewProduct/17'])
   }
 
   addNewProduct(productInfo:any){
