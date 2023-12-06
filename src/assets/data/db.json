@@ -208,15 +208,15 @@
     },
     {
       "id": 17,
-      "productName": "14Pro Max",
-      "productPrice": 23,
-      "productRating": 3,
-      "productLink": "https://cdn.dxomark.com/wp-content/uploads/medias/post-125428/Apple-iPhone-14-Pro-Max_FINAL_featured-image-packshot-review-1.jpg",
-      "productCategory": "Mobile",
-      "productDescription": "description goes here ",
+      "productName": "iphone 14 pro",
+      "productPrice": 200,
+      "productRating": 5,
+      "productLink": "https://s.yimg.com/uu/api/res/1.2/Y0sdCqqSrXzmtFWgzjwgZg--~B/aD0xMzMzO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-09/280da9d0-33d8-11ed-beeb-9f0777e02779.cf.jpg",
+      "productCategory": "mobile",
+      "productDescription": "oeuiweyoiioeqpopqghioaegkkfgklang",
       "vendorName": "Apple",
-      "inStock": 4,
-      "warranty": "2 years"
+      "inStock": 22,
+      "warranty": "4"
     }
   ]
 }

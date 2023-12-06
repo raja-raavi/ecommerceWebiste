@@ -9,28 +9,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewAllProductsComponent } from '../products/view-all-products/view-all-products.component';
 import { AppRoutingModule } from '../app-routing.module';
 
-const routes:Routes = [
-  
-]
-
 @NgModule({
   declarations: [
     HomeComponent,
     HeaderComponent,
     SideBarComponent,
     FooterComponent,
-    InvalidSearchComponent
+    InvalidSearchComponent,
   ],
-  imports: [
-    CommonModule,
-    AppRoutingModule,
-  ],
+  imports: [CommonModule, AppRoutingModule],
   exports: [
     HomeComponent,
     HeaderComponent,
     SideBarComponent,
     FooterComponent,
     InvalidSearchComponent,
-  ]
+  ],
 })
-export class SiteFrameworkModule { }
+export class SiteFrameworkModule {}

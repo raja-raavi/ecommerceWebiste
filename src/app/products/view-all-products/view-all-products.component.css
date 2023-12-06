@@ -1,5 +1,6 @@
-body{margin-top:20px;
-    background:#eee;
+body {
+  margin-top: 20px;
+  background: #eee;
 }
 /* E-commerce */
 .product-box {
@@ -172,11 +173,19 @@ table.shoping-cart-table tr td:last-child {
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

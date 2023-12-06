@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  register(registerForm:any){
+    console.log(registerForm);
+  }
+
 }

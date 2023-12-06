@@ -13,7 +13,6 @@ import { InvalidSearchComponent } from './invalid-search/invalid-search.componen
 import { FormsModule } from '@angular/forms';
 import { UpdateProductModifiedComponent } from './update-product-modified/update-product-modified.component';
 
-
 @NgModule({
   declarations: [
     ProductsComponent,
@@ -24,12 +23,8 @@ import { UpdateProductModifiedComponent } from './update-product-modified/update
     ViewAllProductsComponent,
     ViewProductsByCategoryComponent,
     InvalidSearchComponent,
-    UpdateProductModifiedComponent
+    UpdateProductModifiedComponent,
   ],
-  imports: [
-    CommonModule,
-    ProductsRoutingModule,
-    FormsModule,
-  ]
+  imports: [CommonModule, ProductsRoutingModule, FormsModule],
 })
-export class ProductsModule { }
+export class ProductsModule {}
