@@ -25,10 +25,14 @@ export class UpdateProductComponent implements OnInit{
   ngOnInit() {
     this.activatedRote.params.subscribe(data => {
       this.id = data['id']
+    },error=>{
+      alert("Something Went Wrong..!!");
     })
 
     this.productsService.viewProduct(this.id).subscribe(data =>{
       this.oldData = data;
+    },error=>{
+      alert("Something Went Wrong..!!");
     })
 
   }
@@ -50,8 +54,9 @@ export class UpdateProductComponent implements OnInit{
     }
 
     this.productsService.updateProduct(this.id, updatedProduct).subscribe(data =>{
-      console.log(data);
-      
+      console.log(data);  
+    },error=>{
+      alert("Something Went Wrong..!!");
     })
   }
 

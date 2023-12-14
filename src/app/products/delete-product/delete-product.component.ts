@@ -21,9 +21,10 @@ export class DeleteProductComponent implements OnInit{
     //to get product id
     this.activatedRoute.params.subscribe(data => {
       this.productId = data['id'];
-      console.log(this.productId);
-      
-    }) 
+      console.log(this.productId); 
+    },error=>{
+      alert("Something Went Wrong..!!");
+    })
     
     //to get all products
     this.productsService.getAllProducts().subscribe(data => {

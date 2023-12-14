@@ -20,11 +20,15 @@ export class ViewProductComponent implements OnInit{
   ngOnInit() {
     this.activatedRoute.params.subscribe(data => {
       this.productId = data['id'];
-    })  
+    },error=>{
+      alert("Something Went Wrong..!!");
+    });  
 
   this.service.viewProduct(this.productId).subscribe(data => {
     this.viewProduct =  data;
-  })
+  },error=>{
+    alert("Something Went Wrong..!!");
+  });
   }
   
 

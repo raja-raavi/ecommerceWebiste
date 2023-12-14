@@ -18,10 +18,14 @@ export class UpdateProductModifiedComponent implements OnInit{
   ngOnInit() {
     this.activatedRoute.params.subscribe(data => {
       this.id = data['id'];
+    },error=>{
+      alert("Something Went Wrong..!!");
     });
 
     this.productsService.getAllProducts().subscribe(data => {
       this.productsData = data;
+    },error=>{
+      alert("Something Went Wrong..!!");
     });
   }
   

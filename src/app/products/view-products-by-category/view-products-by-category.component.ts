@@ -34,7 +34,11 @@ export class ViewProductsByCategoryComponent implements OnInit {
         } else {
           this.filteredProducts = this.AllProducts;
         }
+      },error=>{
+        alert("Something Went Wrong..!!");
       });
+    },error=>{
+      alert("Something Went Wrong..!!");
     });
   }
 }

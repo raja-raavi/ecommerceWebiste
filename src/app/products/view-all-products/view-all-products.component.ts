@@ -17,6 +17,8 @@ export class ViewAllProductsComponent implements OnInit{
   ngOnInit() {
     this.productsService.getAllProducts().subscribe(data => {
       this.productsData = data;
+    },error=>{
+      alert("Something Went Wrong..!!");
     });
     
   }
