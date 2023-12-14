@@ -22,6 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AuthenticationRoutingModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  exports: [
+    LoginComponent
   ]
 })
 export class AuthenticationModule { }

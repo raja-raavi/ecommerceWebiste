@@ -9,16 +9,17 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewProductsByCategoryComponent } from './view-products-by-category/view-products-by-category.component';
 import { InvalidSearchComponent } from './invalid-search/invalid-search.component';
 import { UpdateProductModifiedComponent } from './update-product-modified/update-product-modified.component';
+import { AuthenticationGuard } from '../guards/authentication.guard';
 
 const routes: Routes = [
   { path: '', component: ProductsComponent },
-  { path:'createProduct', component: CreateProductComponent},
-  { path:'deleteProduct/:id', component: DeleteProductComponent},
-  { path:'updateProduct/:id', component: UpdateProductComponent},
-  { path:'updateProductModified/:id', component: UpdateProductModifiedComponent},
-  { path:'viewAllProducts', component: ViewAllProductsComponent},
-  { path:'viewProduct/:id', component: ViewProductComponent},
-  { path:'viewProductBycategory', component:ViewProductsByCategoryComponent},
+  { path:'createProduct', component: CreateProductComponent, canActivate: [AuthenticationGuard]},
+  { path:'deleteProduct/:id', component: DeleteProductComponent, canActivate: [AuthenticationGuard]},
+  { path:'updateProduct/:id', component: UpdateProductComponent, canActivate: [AuthenticationGuard]},
+  { path:'updateProductModified/:id', component: UpdateProductModifiedComponent, canActivate: [AuthenticationGuard]},
+  { path:'viewAllProducts', component: ViewAllProductsComponent, canActivate: [AuthenticationGuard]},
+  { path:'viewProduct/:id', component: ViewProductComponent, canActivate: [AuthenticationGuard]},
+  { path:'viewProductBycategory', component:ViewProductsByCategoryComponent, canActivate: [AuthenticationGuard]},
   { path:'**', component: InvalidSearchComponent}
 ];
 

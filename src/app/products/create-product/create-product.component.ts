@@ -35,7 +35,7 @@ export class CreateProductComponent{
   addNewProduct(productInfo:any){
 
     const newProduct = {
-      id: 17,
+      // id: 17,
       productName: productInfo.value.productName,
       productPrice: productInfo.value.productPrice,
       productRating: productInfo.value.productRating,
@@ -49,9 +49,10 @@ export class CreateProductComponent{
     }
 
     this.service.createProduct(newProduct).subscribe(data => {
-      console.log(data);
-      this.details = data;
-      
+      // console.log(data);
+      this.details = data;  
+    },error=>{
+      alert("Something Went Wrong..!!");
     })
   }
 

@@ -1,3 +1,5 @@
+
+/* form alignment  */
 .divider:after,
 .divider:before {
 content: "";
@@ -12,4 +14,13 @@ height: calc(100% - 73px);
 .h-custom {
 height: 100%;
 }
+}
+
+/* validations purpouse */
+input.ng-touched.ng-valid {
+    border: 2px solid green;
+}
+ 
+input.ng-touched.ng-invalid {
+    border: 2px solid red;
 }
