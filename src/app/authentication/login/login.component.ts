@@ -18,7 +18,7 @@ export class LoginComponent {
       console.log(data);
       
       const result = data.find((res:any)=>{
-        return res.email === loginForm.value.email && res.password === loginForm.value.password        
+        return res.email === loginForm.value.email && res.password === loginForm.value.password;      
       });
       console.log(result);
 
@@ -29,7 +29,6 @@ export class LoginComponent {
         loginForm.reset();
         this.router.navigate(['home']);
         return true;
-
       }else{
         alert("Opps...User Not Found With This Data!!!!");
         return false;
