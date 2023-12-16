@@ -1,0 +1,21 @@
+1. To install json server (npm insatll --save json-server)
+
+2. To run json server (npx json-server --watch db.json)
+
+3. To install lazy loading modules directly (ng g m <moduleName> --route <routingName> --module app.module)
+
+4. npx kill-port 4200 (kill ng port)
+
+5. npx kill-port 3000 (kill json server port)
+
+6. To install fa-fa icons ( npm i angular-font-awesome )
+    "node_modules/font-awesome/css/font-awesome.css"
+
+steps:
+1. to install git hub pages (ng add angular-cli-ghpages) in project folder only.
+
+2.in githubb click settting -> pages -> deploy from branch -> choose branch -> save
+
+3.ng build --base-href "https://raja-raavi.github.io/ecommerceWebiste/"
+
+
