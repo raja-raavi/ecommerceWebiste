@@ -11,3 +11,15 @@
 6. To install fa-fa icons ( npm i angular-font-awesome )
     "node_modules/font-awesome/css/font-awesome.css"
 
+steps:
+1. to install git hub pages (ng add angular-cli-ghpages) in project folder only.
+
+2.in githubb click settting -> pages -> deploy from branch -> choose branch -> save
+
+3.ng build --base-href "https://raja-raavi.github.io/ecommerceWebiste/"
+
+4.npx angular-cli-ghpages --dir=dist/ecommerce-website
+
+5. https://raja-raavi.github.io/ecommerceWebiste/  (paste in browser)
+
+6. githubb click settting -> pages -> deploy from branch ->choose branch as (gh-pages) -> save
