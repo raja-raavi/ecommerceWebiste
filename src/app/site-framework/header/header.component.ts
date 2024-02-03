@@ -23,9 +23,6 @@ export class HeaderComponent {
     }else{
       this.router.navigate(['home'])
     }
-  
-    // confirm("are you sure want to Logout!!!!!!");
-    // localStorage.clear();
-    // this.router.navigate(['auth/login']);
+
   }
 }  
