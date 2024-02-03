@@ -1,12 +1,20 @@
 {
   "RegisteredUsersList": [
     {
-      "userName": "Raja Raavi",
+      "userName": "Raja",
       "email": "rajaraavi999@gmail.com",
-      "password": "Raja@123",
-      "confirmPassword": "Raja@123",
+      "password": "12345678",
+      "confirmPassword": "12345678",
       "terms": true,
       "id": 1
+    },
+    {
+      "userName": "Raja",
+      "email": "rajaraavi999@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "terms": true,
+      "id": 2
     }
   ],
   "products": [
@@ -190,7 +198,7 @@
       "vendorName": "Oneplus",
       "reviews": 20,
       "inStock": "24 products",
-      "warranty": "4 years"
+      "warranty": "3 years"
     },
     {
       "id": 15,

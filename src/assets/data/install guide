@@ -1,4 +1,4 @@
-1. To install json server (npm insatll --save json-server)
+1. To install json server (npm install --save json-server)
 
 2. To run json server (npx json-server --watch db.json)
 

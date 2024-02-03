@@ -10,14 +10,22 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class HeaderComponent {
 
-  constructor(private router: Router, private  service: AuthenticationService){
+  constructor(private router: Router, public service: AuthenticationService){
 
   }
 
   logout(){
+
+    var result = window.confirm("are you sure want to Logout!!!")
+    if(result==true){
+      this.router.navigate(['auth/login'])
+      return localStorage.clear();
+    }else{
+      this.router.navigate(['home'])
+    }
   
-    confirm("are you sure want to Logout!!!!!!");
-    localStorage.clear();
-    this.router.navigate(['auth/login']);
+    // confirm("are you sure want to Logout!!!!!!");
+    // localStorage.clear();
+    // this.router.navigate(['auth/login']);
   }
 }  

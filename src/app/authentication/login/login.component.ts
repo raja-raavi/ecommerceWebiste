@@ -34,7 +34,7 @@ export class LoginComponent {
         return false;
       }
     }, error=>{
-      alert("Something Went Wrong...Try Again!!!");
+      alert("Something Went Wrong...Try Again!!! or DataBase is Not Working");
     })
   }
 }
