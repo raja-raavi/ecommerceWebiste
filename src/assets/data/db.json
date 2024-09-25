@@ -15,6 +15,14 @@
       "confirmPassword": "12345678",
       "terms": true,
       "id": 2
+    },
+    {
+      "userName": "Raja",
+      "email": "rajaraavi999@gmail.com",
+      "password": "Raja@123",
+      "confirmPassword": "Raja@123",
+      "terms": true,
+      "id": 3
     }
   ],
   "products": [

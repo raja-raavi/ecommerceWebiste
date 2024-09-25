@@ -7,19 +7,15 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
 import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
-  { path: "", component: LoginComponent},
-  {path: 'home', component: HomeComponent},
-  { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
-  { path: 'auth', loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule) },
-  { path: '**', component: InvalidSearchComponent},
-  
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  {path: 'products', loadChildren: () =>import('./products/products.module').then((m) => m.ProductsModule),},
+  {path: 'auth',loadChildren: () =>import('./authentication/authentication.module').then((m) => m.AuthenticationModule),},
+  { path: '**', component: InvalidSearchComponent },
 ];
 
 @NgModule({
-  imports: [
-    SiteFrameWorkModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+  imports: [SiteFrameWorkModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
